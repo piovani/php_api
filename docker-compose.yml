@@ -27,6 +27,8 @@ services:
       - "3307:3306"
     environment:
       - "MYSQL_DATABASE=database"
-      - "MYSQL_ALLOW_EMPTY_PASSWORD=false"
+      - "MYSQL_USER=user"
+      - "MYSQL_PASSWORD=secret"
+      - "MYSQL_ALLOW_EMPTY_PASSWORD=true"
     networks:
       - php-api-network
